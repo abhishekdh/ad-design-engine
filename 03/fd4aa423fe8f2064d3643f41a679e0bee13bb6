@@ -1,0 +1,51 @@
+ad-design-engine/references/layout.md
+  s_a2723e8f87dd5d::t_c279839ffce4e9 1-241
+ad-design-engine/references/marketing-mode.md
+  s_a2723e8f87dd5d::t_7c87b2efa5d81c 1-184
+ad-design-engine/references/a11y.md
+  s_a2723e8f87dd5d::t_70a6a08ae772d9 1-188
+ad-design-engine/SKILL.md
+  s_a2723e8f87dd5d::t_1f15e83b295e45 243-244
+  s_a2723e8f87dd5d::t_5a47a90f68be85 285
+  s_a2723e8f87dd5d::t_573b45aca67bff 1-9,11-115,117-242,245-284,286-309
+  s_a2723e8f87dd5d::t_f5160452628a66 10
+  s_a2723e8f87dd5d::t_f82db9b81e1c8e 116
+ad-design-engine/references/anti-slop.md
+  s_a2723e8f87dd5d::t_db6c0b48b2f81b 1-180
+ad-design-engine/references/motion.md
+  s_a2723e8f87dd5d::t_17a8c977d25b10 1-141,143-245
+  s_a2723e8f87dd5d::t_4461708f2edb35 142
+ad-design-engine/references/type.md
+  s_a2723e8f87dd5d::t_a467be299c827b 1-245
+ad-design-engine/references/product-mode.md
+  s_a2723e8f87dd5d::t_3cb1155ce4fdf5 1-212
+ad-design-engine/references/platform.md
+  s_a2723e8f87dd5d::t_336b382a059d27 1-201,204,206-273
+  s_a2723e8f87dd5d::t_ad2cea4fd636a6 202-203,205
+ad-design-engine/references/aesthetics.md
+  s_a2723e8f87dd5d::t_d9b7290832b8f6 1-225
+ad-design-engine/.gitignore
+  s_a2723e8f87dd5d::t_f57868efb2e9e4 1-2
+ad-design-engine/references/color.md
+  s_a2723e8f87dd5d::t_257bac99045aaf 1-235
+ad-design-engine/README.md
+  s_a2723e8f87dd5d::t_a15d1a3483e3ae 1-245
+ad-design-engine/LICENSE
+  s_a2723e8f87dd5d::t_2d1c7d203529c5 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "03fd4aa423fe8f2064d3643f41a679e0bee13bb6",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "claude-opus-5"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
