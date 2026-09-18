@@ -1,0 +1,45 @@
+LICENSE
+  s_a2723e8f87dd5d::t_2ba37637cbba90 1-21
+README.md
+  s_a2723e8f87dd5d::t_d603d1a05d71a4 1-242
+SKILL.md
+  s_a2723e8f87dd5d::t_31abcf26a6f33c 1-309
+.gitignore
+  s_a2723e8f87dd5d::t_cc40da7a251dc6 1-3
+references/a11y.md
+  s_a2723e8f87dd5d::t_6768a2059281db 1-188
+references/aesthetics.md
+  s_a2723e8f87dd5d::t_fa3bfe90e3d5ba 1-225
+references/anti-slop.md
+  s_a2723e8f87dd5d::t_a4854593bc368a 1-180
+references/color.md
+  s_a2723e8f87dd5d::t_b35a720fe0a2c3 1-235
+references/layout.md
+  s_a2723e8f87dd5d::t_bb614b6ad79f3c 1-241
+references/marketing-mode.md
+  s_a2723e8f87dd5d::t_fa9c3feab38fe4 1-184
+references/motion.md
+  s_a2723e8f87dd5d::t_c38a1c67499c7e 1-245
+references/platform.md
+  s_a2723e8f87dd5d::t_de7d4f6ec52f07 1-273
+references/product-mode.md
+  s_a2723e8f87dd5d::t_533f75a2491e77 1-212
+references/type.md
+  s_a2723e8f87dd5d::t_657f3b6bed3d83 1-245
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "9fd850e656cc27728e2f5f682f611406caa60cd5",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "unknown"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
