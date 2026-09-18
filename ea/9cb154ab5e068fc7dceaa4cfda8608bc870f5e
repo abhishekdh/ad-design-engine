@@ -1,0 +1,40 @@
+SKILL.md
+  s_a2723e8f87dd5d::t_be5303359fe423 227,229-230,232-258,263-269,273-278
+  s_a2723e8f87dd5d::t_6e53b82ec7bea1 343-348
+  s_a2723e8f87dd5d::t_4035a3fcbabd97 11
+  s_a2723e8f87dd5d::t_89ec590622321b 279
+README.md
+  s_a2723e8f87dd5d::t_02f1ac6d9981ce 113,117
+  s_a2723e8f87dd5d::t_18918dedce05f3 130,135-150
+  s_a2723e8f87dd5d::t_ecd01f20dc109b 151
+references/color.md
+  s_a2723e8f87dd5d::t_998a76cbae3254 224-253
+references/layout.md
+  s_a2723e8f87dd5d::t_e568d48e677e52 230-273
+references/type.md
+  s_a2723e8f87dd5d::t_904437ab40a8bb 68-96
+references/anti-slop.md
+  s_a2723e8f87dd5d::t_9e3780290da8a5 17,21-24,30-40,43-44
+  s_a2723e8f87dd5d::t_cc1a295632dc32 219-221,231,233,239-242
+  s_a2723e8f87dd5d::t_a0938b6516a4ee 41-42
+  s_a2723e8f87dd5d::t_9b03131d8e2980 163-200
+  s_a2723e8f87dd5d::t_50039182cc204a 45
+references/motion.md
+  s_a2723e8f87dd5d::t_cb3936596907bd 232-235
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ea9cb154ab5e068fc7dceaa4cfda8608bc870f5e",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "claude-opus-5"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
