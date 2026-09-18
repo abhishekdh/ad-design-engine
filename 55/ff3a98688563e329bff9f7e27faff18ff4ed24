@@ -1,0 +1,21 @@
+LICENSE
+  s_a2723e8f87dd5d::t_f322c7834b9972 1-21
+.gitignore
+  s_a2723e8f87dd5d::t_5bf478e24680bb 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "55ff3a98688563e329bff9f7e27faff18ff4ed24",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "claude-opus-5"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
