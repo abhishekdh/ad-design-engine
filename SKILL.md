@@ -8,7 +8,7 @@ description: >
   auditing existing UI for generic-AI tells. Covers expressive/marketing and product-UI modes,
   current CSS platform features (OKLCH, container queries, anchor positioning, scroll-driven
   animation, CSS-first utility framework theming), and WCAG 2.2 AA.
-version: 1.0.0
+version: 1.1.0
 license: MIT
 ---
 
@@ -224,21 +224,58 @@ section padding cancel each other out, and section spacing is where it happens m
 Read `references/anti-slop.md` and `references/a11y.md`. Run both passes over the built output, not
 over your intentions.
 
-Screenshot the result if the environment allows it. A picture is worth 1000 tokens.
+### Render first, or the score is void
 
-Then **state the score**:
+Open the build. Screenshot it at 1280 and at 320. A picture is worth 1000 tokens, and half the
+signatures in the detector describe how something *looks*, which source text cannot answer.
 
-> Slop score: `<n>`/75 - band `<name>`. Findings: `<file:line - signature>` ...
+If the environment cannot render, you may still score, but you must report `Rendered: no` and call
+the band **provisional**. You may not write the word "done", "ship", or "Authored" against an
+unrendered build. A design skill that signs off without seeing the design has no way to fail.
+
+### Four checks the score does not cover
+
+Run these before the scored pass. Each one is pass/fail and each one has killed a build that scored
+well.
+
+1. **Dial check.** Measure the realized variance, motion, and density against what phase 1 declared,
+   using the rubrics in `references/layout.md` and `references/motion.md`. Deviation of 2 or more on
+   any axis is signature `A7` and returns to phase 1. Declared dials that do not govern the build are
+   decoration.
+2. **Job check.** Re-read the phase 0 primary job. Can a visitor do that one thing? Count the visible
+   placeholders: more than two in something presented as finished is `A6`.
+3. **Distinction check.** Name three things on this page that a direct competitor's page could not
+   contain. Not three adjectives, three elements. Fewer than three means the direction is generic and
+   the score is measuring a well-executed nothing.
+4. **Subject check.** Delete every element that refers to how the page was built. If what remains
+   cannot do the phase 0 job, the page is about its own construction, which is `A5`.
+
+### Then state the score
+
+> Slop score: `<n>`/100 - band `<name>`. Rendered: `<yes | no, provisional>`.
+> Dials: declared `<v/m/d>`, realized `<v/m/d>`.
+> Findings: `<file:line - signature>` ...
+> Direction faults: `<A5 | A6 | A7 | none>`.
 > Accessibility: `<pass, or the failing criteria>`.
 
 | Score | Band | Action |
 | --- | --- | --- |
-| 0-15 | Authored | Ship |
-| 16-30 | Assisted | Fix every severity 4-5 finding, re-score |
-| 31-50 | Generated | Return to phase 1. The direction is the problem, not the execution |
-| 51+ | Template | Discard, restart at phase 0 |
+| 0-20 | Authored | Ship |
+| 21-40 | Assisted | Fix every severity 4-5 finding, re-score |
+| 41-65 | Generated | Return to phase 1. The direction is the problem, not the execution |
+| 66+ | Template | Discard, restart at phase 0 |
+
+**Any direction fault overrides the band.** `A5`, `A6`, or `A7` present returns the work to phase 1
+even at a score of 4. Those three say the wrong thing was built well.
 
 **Gate 3.** Never report done without the score.
+
+### A low score is not a finished design
+
+The detector measures the absence of known defaults. Absence is necessary and not sufficient: a blank
+page scores zero. If the number is low and the work still looks like everything else, the detector is
+missing a row and the missing row is your finding. Write it down in `anti-slop.md` rather than
+trusting the number that failed to catch it.
 
 Before you finish, remove one accessory. Cut the single element that serves the design least. A
 design is finished when taking anything else away would break it.
@@ -303,7 +340,12 @@ These thoughts mean stop.
 | "I'll write `DESIGN.md` after, once things settle" | Then it documents what happened instead of governing it. It is a lock, not a log |
 | "This one value doesn't need to go in the lock" | That is the first of thirty |
 | "It looks good, no need to score it" | "Looks good" is the exact feeling generic output produces. Score it |
-| "The score is 34 but the execution is solid" | 31+ means the direction is wrong. Execution cannot save it |
+| "The score is 48 but the execution is solid" | 41+ means the direction is wrong. Execution cannot save it |
+| "It scored 3, so it's good" | It scored 3 because you removed things. Run the four checks. A blank page scores 0 |
+| "I can't render it, I'll score the source" | Then say `Rendered: no` and call the band provisional. Never "Authored" |
+| "Grayscale and hairlines is restrained, not generic" | It is the current default. `A1`, `A2`, `A3`. Restraint has to be paid for somewhere |
+| "The dials were a phase 1 thing" | Then they were decoration. Measure the realized value and compare, `A7` |
+| "A page about the design process is a strong concept" | It is `A5`. Delete the meta and see whether a deliverable is left |
 | "Purple-to-pink gradient fits this brand" | It fits every brand, which is why it is severity 5 |
 | "Three equal feature cards are fine here" | On a landing page, no. As a dashboard KPI row, yes. Check the mode |
 | "Reduced motion is an edge case" | It is a browser setting a real person turned on for a medical reason |

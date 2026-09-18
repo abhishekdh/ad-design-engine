@@ -221,6 +221,36 @@ no palette, only six colors that were chosen one at a time.
 
 ---
 
+## The commitment floor
+
+Everything above this line is a ban. A file made only of bans has a predictable failure: the safest
+possible reply to it is to use almost no color, because a grayscale page cannot trip a single banned
+cluster. That page is not restrained, it is abstaining, and it now reads as its own default. See `A1`
+in `anti-slop.md`.
+
+So the palette also has a floor. **One of these three has to be true**, and `DESIGN.md` has to say
+which one:
+
+1. **A committed hue.** At least one surface, fill, or field carries chroma **0.10 or higher** at a
+   size someone notices across the room. Not a 14px label, not a hairline, not one badge.
+2. **A committed lightness.** The page is decisively dark or decisively light and the palette is built
+   for it: surfaces below L 0.25 or above L 0.95, with the whole hierarchy derived from that choice
+   rather than defaulting to a light gray page with dark gray text.
+3. **A committed material.** The color system stays quiet and something else carries the identity:
+   photography, illustration, texture, a data visual, scanned or found material. Named in `DESIGN.md`
+   as the thing doing the work.
+
+`Monochrome plus interrupt` in the table above is a real direction, and it only holds with option 2 or
+option 3 underneath it. Grayscale plus one accent used four times, on a light gray page, with no
+material anywhere, is all three floors unmet at once. Each individual decision defends itself; the
+page has nothing in it.
+
+**Where restraint is the brief, say so explicitly.** Government, medical, procurement, and dense
+internal tooling legitimately want option 2 and nothing more. Write that reason into `DESIGN.md` and
+`A1` does not fire. An unstated reason is not a reason, it is the absence of a decision.
+
+---
+
 ## Locks
 
 Once `DESIGN.md` records the palette:

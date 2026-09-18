@@ -14,18 +14,34 @@ they now read as a machine signature. This file turns that recognition into a nu
 3. Only count signatures whose **Modes** column includes the current mode.
 4. Report the total, the band, and the individual hits with their severities.
 
-Max realistic total: 75. Bands:
+Max realistic total: 100. Bands:
 
 | Score | Band | Meaning |
 | --- | --- | --- |
-| **0-15** | Authored | Reads as a deliberate design. Ship it. |
-| **16-30** | Assisted | Defaults are visible. Fix the highest severities. |
-| **31-50** | Generated | Recognizable as machine output. Revise the direction, not the details. |
-| **51+** | Template | This is a template with the content swapped. Start the direction over. |
+| **0-20** | Authored | Reads as a deliberate design. Ship it. |
+| **21-40** | Assisted | Defaults are visible. Fix the highest severities. |
+| **41-65** | Generated | Recognizable as machine output. Revise the direction, not the details. |
+| **66+** | Template | This is a template with the content swapped. Start the direction over. |
 
 **A score is a claim you have to be able to defend.** Reporting 8 while three severity-5 signatures
 are present is worse than not scoring, because it launders the problem. When unsure whether a
 signature is present, count it.
+
+### Direction faults override the band
+
+`A5`, `A6`, and `A7` are not detail defects. Each one means the direction or the content is wrong,
+and no amount of execution fixes it. **Any of the three present returns the work to phase 1
+regardless of the total.** A low score with a direction fault in it is the most misleading output
+this detector can produce, because everything the number measures is genuinely fine.
+
+### This detector must be dated
+
+Every signature here describes a default that was common at the time it was written. Defaults move.
+The `A` block exists because the first version of this file scored a grayscale, hairline-ruled,
+monospace-labelled page at 3 out of the 75 this file used to top out at, while that page was plainly
+generic. The file was catching the
+previous generation of slop and had no row for the current one. Assume the same is true of this
+version. When a build scores low and still looks like everything else, the missing row is the finding.
 
 The mode column matters. A detector that fires on legitimate product patterns - three KPI cards, a
 dense table, a centered form - gets mentally switched off, and a switched-off detector is worse than
@@ -144,6 +160,44 @@ does not apply to code comments or to this documentation.
 
 ---
 
+## Austerity
+
+The other six sections catch **commitment without judgment**: a gradient nobody argued for, a card
+grid nobody needed. This section catches the opposite failure, and it is the one a detector made
+only of prohibitions will reward. Strip out every listed default and what remains is grayscale type
+on white with hairline rules, which scores near zero and is now its own recognizable house style.
+
+Restraint is a decision when the brief asks for it and the build pays for it somewhere else.
+Restraint chosen to avoid being caught is not restraint, it is abstention.
+
+| # | Signature | Sev | Modes |
+| --- | --- | --- | --- |
+| A1 | Grayscale or near-grayscale only, where the brief did not ask for restraint and no other element carries the weight | 4 | MARKETING |
+| A2 | Monospace on labels, eyebrows, captions, or prose that is neither code nor data | 4 | both |
+| A3 | Hairline rules are the only structural device: no fill, no mass, no image, no material anywhere | 3 | MARKETING |
+| A4 | Zero radius, zero shadow, zero texture, adopted together as taste with no documented reason | 2 | both |
+| A5 | The page is about its own construction, its process, or its own scoring, rather than about the subject | **5** | MARKETING |
+| A6 | More than two visible placeholders in something presented as finished | 4 | both |
+| A7 | Realized dials deviate from the declared dials by 2 or more on any axis | **5** | both |
+| A8 | Nothing on the page has a source other than the stylesheet: no image, illustration, texture, data visual, or found material | 3 | MARKETING |
+| A9 | Technical notation as decoration: codes, IDs, severities, or ratios displayed with no system behind them | 3 | both |
+
+**On A2.** Monospace earns its place where character alignment carries meaning: values, IDs, paths,
+tabular figures, code. Used on an eyebrow or a caption it is costume, and it is currently the fastest
+way to make a page look considered without deciding anything. One or two instances with a stated job
+is a choice. Mono as the page's second face, on everything meta, is the tell.
+
+**On A5.** The failure is seductive because the meta-page is genuinely more interesting to build than
+the real one. A portfolio whose subject is its own audit contains no portfolio. Test: delete every
+element that refers to how the page was made. If what remains cannot do the job named in phase 0,
+the page was never doing that job.
+
+**On A7.** This is the only signature that scores the *gap between two of your own artifacts* rather
+than the artifact alone. Declaring variance 8 and building variance 3 means the dials were decoration
+and phase 1 did not govern phase 3. Measure the realized value per `layout.md`, not by impression.
+
+---
+
 ## The four questions
 
 Scoring finds defaults. These find the absence of a design. Answer all four before presenting
@@ -162,7 +216,9 @@ anything.
 ## Reporting format
 
 ```
-Slop score: 14 / 75  (Authored)
+Slop score: 14 / 100  (Authored)
+Rendered: yes, 1280 and 320
+Dials: declared 8/6/4, realized 8/5/4
 
 Hits:
   T4  4  "seamless" carries the sub-headline
@@ -172,9 +228,15 @@ Hits:
   M9  2  ease-in-out on the panel entrance
   K7  2  two stroke widths in the icon row
 
+Direction faults: none
 Memorable in 10s: the horizontal ledger strip in the hero.
+Could not be another product because: the ledger strip, the archive photography, the 1962 price card.
 Removed: the trust micro-strip, one of two secondary actions, the section eyebrows in 3 of 7.
 ```
 
 Every hit names the location. A hit without a location cannot be fixed, and cannot be verified as
 fixed.
+
+The three header lines are not optional. A score without `Rendered` was computed from source text,
+which means the visual defaults in the `A` block were never actually checked, and the band is a
+guess. Say `Rendered: no` and report the band as provisional rather than omitting the line.

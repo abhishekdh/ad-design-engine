@@ -65,6 +65,35 @@ Two rules follow:
   optical size handling, default weights only) is a signal that the type was not designed. If a
   ubiquitous face is genuinely right, make its use deliberate and say so in `DESIGN.md`.
 
+### One typographic risk, minimum
+
+A page can satisfy every rule in this file by setting the system sans at three weights on a modular
+scale and stopping. That is not a type system, it is a default with a ratio applied to it, and it is
+what the rules above produce when read as a checklist to survive rather than a craft to practise.
+
+**Name one typographic decision that could have gone wrong.** One, at minimum, in `DESIGN.md`:
+
+- a display size that is genuinely uncomfortable and correct anyway
+- negative tracking far enough to be a choice, past about -0.03em
+- a real weight contrast, 300 against 800, not 400 against 600
+- one word or line set to break the grid: a hanging figure, an outdented lead-in, a lowercase display
+- a face chosen from the subject's own vernacular rather than from the interface-sans shelf
+- mixed alignment within a block, where the reason is stated
+
+If nothing on the page could be argued with, nobody made a typographic decision. Note that the
+absence of a risk is not itself a scored signature; the scored consequences are `Y1` and the
+austerity block, and this is the positive requirement they exist to enforce.
+
+### Monospace is not a style
+
+Monospace earns its place where character alignment carries meaning: values, IDs, paths, code,
+tabular figures, anything a reader compares vertically. It is currently the fastest way to make a page
+look considered without having decided anything, which is why it is scored as `A2`.
+
+- Mono on an eyebrow, a caption, a button, or body prose is costume. Use the sans.
+- Mono as the page's entire second face, applied to everything meta, is the tell rather than a pairing.
+- If mono is one of two declared faces, `DESIGN.md` names the data it aligns. "For labels" is not a job.
+
 ---
 
 ## Serif discipline

@@ -110,11 +110,11 @@ page nobody remembers. The mode router picks first; ambiguity resolves to PRODUC
 
 ## The detector
 
-Every phase ends in a number, not an adjective. ~60 signatures, each with a severity of 1-5 and a
+Every phase ends in a number, not an adjective. 73 signatures, each with a severity of 1-5 and a
 mode it applies in.
 
 ```
-Slop score: 41 / 75  →  Generated                    Slop score: 11 / 75  →  Authored
+Slop score: 48 / 100  →  Generated                   Slop score: 11 / 100  →  Authored
 
   C1  5  violet→pink gradient, 135deg, hero            C7  2  brand chroma 0.22 on the hero
   T1  5  em dashes in 6 of 9 headings                  L9  2  padding: 13px on .card-header
@@ -127,10 +127,27 @@ Slop score: 41 / 75  →  Generated                    Slop score: 11 / 75  → 
   T5  5  headline works for any competitor                    eyebrows in 3 of 7 sections.
 ```
 
-Bands: **0-15** Authored · **16-30** Assisted · **31-50** Generated · **51+** Template.
+Bands: **0-20** Authored · **21-40** Assisted · **41-65** Generated · **66+** Template.
 
 A score is a claim you have to defend. Every hit names a location, because a hit without a location
 cannot be fixed or verified as fixed.
+
+### A low score is not a finished design
+
+The detector measures the absence of known defaults, and absence is necessary rather than sufficient.
+A blank page scores zero. So three of the signatures are **direction faults** that return the work to
+phase 1 no matter how low the total is: a page that is about its own construction, a deliverable still
+carrying placeholders, and a build whose realized dials drifted 2 or more from the ones it declared.
+
+Phase 4 also runs four unscored pass/fail checks before the scored pass: render the build and look at
+it, measure the realized dials against the declared ones, confirm a visitor can still do the job named
+in phase 0, and name three elements a direct competitor's page could not contain. Each one has failed
+a build that scored in single digits.
+
+A whole section of the detector exists for the opposite of slop. Strip out every listed default and
+what is left is grayscale type on white with hairline rules, monospace labels, and no material
+anywhere, which scores near zero and is now its own recognizable house style. Restraint counts as a
+decision when the brief asks for it and something else on the page carries the weight.
 
 ---
 

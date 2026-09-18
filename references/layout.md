@@ -227,6 +227,50 @@ to look.
 
 ---
 
+## Measuring the realized dials
+
+Read at phase 4. `DESIGN_VARIANCE` and `VISUAL_DENSITY` are declared in phase 1 and have to be
+checkable against the build, or they were decoration. Count, do not estimate: an impression of your
+own work always reports the number you intended.
+
+### Realized `DESIGN_VARIANCE`
+
+| Realized | What the build actually shows |
+| :---: | --- |
+| 1-2 | Every section is one centered column at the same width. |
+| 3-4 | One or two sections differ. Every grid divides into near-equal fractions. |
+| 5-6 | A third or more of the sections use a different layout family. At least one grid is genuinely unequal. |
+| 7-8 | Most sections use a different family, at least one element breaks the container (bleed, edge-anchor, overlap), and at least one grid ratio is 2:1 or wider. |
+| 9-10 | No two sections share a family. Elements overlap, rotate, or sit off the grid on purpose. |
+
+**A near-equal split is symmetry.** `1.15fr / 0.85fr` is a 1.35:1 ratio and reads as two equal
+columns with a rounding error. Nothing below **1.5:1** counts as asymmetry for this rubric. This is
+the most common way a build lands at variance 3 while its lock says 8: the grid was technically
+uneven and visually centered.
+
+Count a layout "family" by what the eye sees, not by the CSS: one-column prose, two-column split,
+uneven multi-cell grid, stacked list, full-bleed band, table. Two sections with the same family and
+different content are one family.
+
+### Realized `VISUAL_DENSITY`
+
+| Realized | Section padding | What is visible at once, at 1280 |
+| :---: | --- | --- |
+| 1-2 | 8rem or more | One idea per screen. |
+| 3-4 | 6-8rem | Two or three elements. |
+| 5-6 | 4-6rem | A primary element plus supporting detail. |
+| 7-8 | 2-3rem | Several data regions simultaneously. |
+| 9-10 | 1.5rem or less | No space that is not carrying something. |
+
+### Reporting
+
+Report as `declared v/m/d, realized v/m/d`. Motion's realized value comes from the budget table in
+`motion.md`: find the row whose contents match what is actually built, not what was planned.
+Deviation of 2 or more on any axis is signature `A7` in `anti-slop.md` and returns the work to
+phase 1.
+
+---
+
 ## Z-index
 
 Three named layers, in `DESIGN.md`, and nothing outside them.

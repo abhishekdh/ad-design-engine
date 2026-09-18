@@ -229,6 +229,10 @@ Anything that loops forever costs attention permanently and delivers information
 
 Reduced-motion branching becomes mandatory at 4.
 
+At phase 4, read this table backwards: find the row that describes what the build actually does, and
+that is the realized `MOTION_INTENSITY`. One count-up on load is row 4-6 only if the rest of that row
+is also present; on its own it is row 3. Two or more below the declared value is signature `A7`.
+
 ---
 
 ## Motion claimed is motion shown
