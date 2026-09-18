@@ -1,0 +1,23 @@
+docs/superpowers/specs/2026-09-18-ad-design-engine-design.md
+  s_a2723e8f87dd5d::t_4ce8b9d8b0d118 1-287
+.gitignore
+  s_a2723e8f87dd5d::t_ccfaf47e13b014 1-2
+.cursor/hooks/state/continual-learning.json
+  s_a2723e8f87dd5d::t_4d4738de80bb03 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "09222f433bea694cf910088fda9a3a0a7be10c4d",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "claude-opus-5"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
