@@ -9,7 +9,7 @@ Direction before code. A gate before the build. A score before it ships.
 
 <br>
 
-![version](https://img.shields.io/badge/version-1.0.0-000000?style=for-the-badge)
+![version](https://img.shields.io/badge/version-1.1.0-000000?style=for-the-badge)
 ![license](https://img.shields.io/badge/license-MIT-000000?style=for-the-badge)
 ![modes](https://img.shields.io/badge/modes-marketing_·_product-000000?style=for-the-badge)
 ![baseline](https://img.shields.io/badge/CSS-2026_baseline-000000?style=for-the-badge)
@@ -22,7 +22,7 @@ process with checkpoints: classify the mode, commit to a design direction, then 
 locked spec and score the result. It covers OKLCH-first design tokens, the current CSS platform
 baseline (container queries, `@scope`, anchor positioning, scroll-driven animation, view
 transitions), WCAG 2.2 AA as hard numbers rather than intentions, and a scored detector for the
-sixty-odd signatures that make generated design recognizable. Two modes, expressive marketing
+seventy-odd signatures that make generated design recognizable. Two modes, expressive marketing
 pages and dense product UI, because a landing page and a data table are not the same problem.
 
 <br>
@@ -181,7 +181,7 @@ Expect a one-line reading of the brief, then a direction, then a **stop**.
 
 ## What is inside
 
-`SKILL.md` (~330 lines) carries the procedure. Everything else loads only when the phase needs it -
+`SKILL.md` (~350 lines) carries the procedure. Everything else loads only when the phase needs it -
 progressive disclosure, so a simple task costs a fraction of the full corpus.
 
 | File | Phase | What it decides |
@@ -192,7 +192,7 @@ progressive disclosure, so a simple task costs a fraction of the full corpus.
 | `references/motion.md` | 1, 3 | motion must be motivated · durations · scroll-driven animation · view transitions · `@starting-style` |
 | `references/platform.md` | 3 | `@layer` · `@scope` · `:has()` · popover · **anchor positioning** · CSS-first framework theming · perf floor |
 | `references/a11y.md` | 1, 4 | WCAG 2.2 AA numbers · 24×24 targets · focus at 2px/3:1 · 200% resize · the 17-line pass/fail checklist |
-| `references/anti-slop.md` | 1, 4 | the ~60 scored signatures · four bands · the four questions |
+| `references/anti-slop.md` | 1, 4 | 73 scored signatures · four bands · three direction faults · the four questions |
 | `references/product-mode.md` | 1, 3 | density→pixels table · tables · forms · required state set · state-management ladder |
 | `references/marketing-mode.md` | 1, 3 | 7 hero paradigms · variety budget · imagery priority · copy discipline |
 | `references/aesthetics.md` | 1 | 8 aesthetic families defined by **mechanics**, so a look can be rebuilt rather than copied |
