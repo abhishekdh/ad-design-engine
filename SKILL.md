@@ -162,7 +162,7 @@ Write `DESIGN.md` at the project root. Fixed section order so a later session ca
 
 Mode: PRODUCT | MARKETING
 Dials: variance <n> / motion <n> / density <n>
-Reference: <named aesthetic or brand target, or "none">
+Family: <aesthetic family from references/aesthetics.md> + <the two mechanics changed>
 
 ## Palette
 <OKLCH value> - <semantic role> - <where it is allowed to appear>
@@ -287,7 +287,7 @@ Each file declares the phase that reads it. Pull only what the current phase nee
 | `references/anti-slop.md` | 1, 4 | The scored detector |
 | `references/product-mode.md` | 0, 1, 3 | Tables, forms, state sets, component discipline |
 | `references/marketing-mode.md` | 0, 1, 3 | Hero, section structure, imagery, copy register |
-| `references/aesthetics.md` | 1 | Named looks, brand references, what each actually requires |
+| `references/aesthetics.md` | 1 | Eight aesthetic families as mechanics, and what each one actually requires |
 
 ---
 
