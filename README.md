@@ -1,8 +1,8 @@
 <div align="center">
 
-# `ad-design-engine`
+# ad-design-engine
 
-### Interfaces that read as **authored**, not generated.
+### A design skill for AI coding agents. Interfaces that read as **authored**, not generated.
 
 A single skill that gives an AI coding agent a design process, not a pile of design opinions.
 Direction before code. A gate before the build. A score before it ships.
@@ -16,6 +16,14 @@ Direction before code. A gate before the build. A score before it ships.
 ![a11y](https://img.shields.io/badge/WCAG-2.2_AA-000000?style=for-the-badge)
 
 </div>
+
+**ad-design-engine** is a self-contained skill for AI coding agents that turns UI work into a
+process with checkpoints: classify the mode, commit to a design direction, then build against a
+locked spec and score the result. It covers OKLCH-first design tokens, the current CSS platform
+baseline (container queries, `@scope`, anchor positioning, scroll-driven animation, view
+transitions), WCAG 2.2 AA as hard numbers rather than intentions, and a scored detector for the
+sixty-odd signatures that make generated design recognizable. Two modes, expressive marketing
+pages and dense product UI, because a landing page and a data table are not the same problem.
 
 <br>
 
