@@ -1,0 +1,22 @@
+README.md
+  s_a2723e8f87dd5d::t_c51e64078589be 12
+  s_a2723e8f87dd5d::t_f814a19e99b574 25
+  s_a2723e8f87dd5d::t_8fe55cf3d4dbe0 184
+  s_a2723e8f87dd5d::t_a6e719fbcf7c4b 195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "42d9a9277b1edf24e9a4cda835331f5196856f05",
+  "prompts": {},
+  "sessions": {
+    "s_a2723e8f87dd5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd7fdd2-a8a8-48c5-9eb3-6d971c95c404",
+        "model": "claude-opus-5"
+      },
+      "human_author": "abhishek <abhishek.dhoundiyal@telekom-digital.com>"
+    }
+  }
+}
